@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>SCATTER PODCAST</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000084" />
+    <link rel="icon" href="//favicon.ico">
+    <link rel="canonical" href="/">
+    
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
+            <a class="brand" href="/">SCATTER PODCAST</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+                    
+                        
+                            <li>
+                                <a href="/about/">
+                                    
+                                    <span>About</span>
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <a href="/post/">
+                                    
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <a href="/podcast/">
+                                    
+                                    <span>Episodes</span>
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav><div id="content" class="container">
+
+<div class="row-fluid navmargin">
+    <div class="page-header">
+        <h1>Resampling with k-fold cross CV - Sat, Feb 1, 2020</h1>
+    </div>
+    <p class="lead"></p>
+    <p>k-fold cross validation as a resampling method&hellip; Let&rsquo;s do a high-level recap of this method.</p>
+<p>k-fold &ldquo;randomly divides the training data into k groups (or folds) of approximate size [with the model being] fit on k-1 folds and the remaining fold used to compute model performance.&rdquo; I use k=5 or k=10 given that this is typical industry practice without really questioning &ldquo;why?&rdquo;</p>
+<p><img src="https://raw.githubusercontent.com/JavOrraca/scatterpodcast/master/content/images/kfold.jpg" alt=""></p>
+<p>In reading through Hands-On Machine Learning with R by Brad Boehmke, Ph.D. and Brandon Greenwell, I was surprised to learn that studies have shown that k=10 performs similarly to leave-one-out cross validation where k=n.</p>
+<p>Without realizing it, sometimes I get carried away optimizing code and drifting from statistics and the core &ldquo;science&rdquo; in data science&hellip; k-fold CV is a technique used by many and is agnostic to your statistical programming language of choice but if you&rsquo;re an #R user, I can&rsquo;t recommend this book enough (free in full online, link below)!</p>
+<p>Source:</p>
+<ul>
+<li>Hands-On Machine Learning with R <a href="https://bradleyboehmke.github.io/HOML/process.html#resampling">Chapter 2.4 Resampling Methods</a></li>
+</ul>
+    <h4><a href="/">Back to Home</a></h4>
+</div>
+
+
+        </div><footer class="container">
+    <hr class="soften">
+    <p>
+        &copy; 
+        
+            SCATTER PODCAST
+        
+        <span id="thisyear">2020</span>
+        
+             | Built on <a href="//gohugo.io" target="_blank">Hugo</a>
+        
+    </p>
+    <p class="text-center">
+        
+        
+        <a href="https://www.linkedin.com/company/scatter-podcast/">Linkedin</a> 
+        
+        
+    </p>
+</footer>
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap-386.js"></script>
+<script src="/js/bootstrap-transition.js"></script>
+<script src="/js/bootstrap-alert.js"></script>
+<script src="/js/bootstrap-modal.js"></script>
+<script src="/js/bootstrap-dropdown.js"></script>
+<script src="/js/bootstrap-scrollspy.js"></script>
+<script src="/js/bootstrap-tab.js"></script>
+<script src="/js/bootstrap-tooltip.js"></script>
+<script src="/js/bootstrap-popover.js"></script>
+<script src="/js/bootstrap-button.js"></script>
+<script src="/js/bootstrap-collapse.js"></script>
+<script src="/js/bootstrap-carousel.js"></script>
+<script src="/js/bootstrap-typeahead.js"></script>
+<script src="/js/bootstrap-affix.js"></script>
+<script>
+    _386 = { 
+        fastLoad: false ,
+        onePass: false , 
+        speedFactor: 1 
+    };
+
+    
+    function ThisYear() {
+        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    };
+</script></body>
+</html>
